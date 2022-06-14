@@ -1,17 +1,20 @@
 # Statement: Core program file: Made up of statements. 
-# THIS IS A STATEMENT, executed by Perl. 
-# `.pl`
+# THIS IS A STATEMENT, executed by Perl. `.pl`
 
 # Hello World
 use warnings;
-print("Hello, World!\n");
+print("Hello world.\n");
 
-# Values and Variables...
-$x = 10;
-$y = 20;
-$s = "Perl string";
+# Creating Values and Variables.
+$myInteger = 1;
+$myFloat = 4.2;
+$myString = "This is a string, and these are floats and integers added together.\n";
+print($myString);
+print(myInteger + myFloat);
 
-# Expressions, A.K.A. anything that returns values.
+# Creating Expressions and Algorithms
+$a = 40;
+$b = 2;
 $c = $a + $b;
 print($c);
 
@@ -22,23 +25,13 @@ print($c);
      print($a);
 }
 
-# Comments are helpful: E.G. ... increase salary %5 for employees who achieve KPI
-$salary = $salary * 1.05;
-$counter = 0; # E.G. ... reset the counter
+print(" | OK\n");
 
-# Whitespace: Perl is very flexible with whitespace. 
-$n = 20;
-$a=20;
+# Notes - 
 
-# Test: Just printing these items. 
+# Perl will run despite of errors in the code. 
+# Perl is flexible with Whitespace.
 
-print($x " " $y);
-
-print($s);
-
-print(" | ");
-
-print("ok");
 
 
 # Keywords: Avoid using these to name things! 

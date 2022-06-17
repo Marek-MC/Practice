@@ -1,6 +1,13 @@
 # Creating Variables.
-variable = "I am a variable."
-IO.puts(variable)
+a = "Brrrr!" # String
+b = 8 # Integer
+c = 4.5 # Float
+d = b + c # Integer + Float
+
+IO.puts(a)
+IO.puts(b)
+IO.puts(c)
+IO.puts(d)
 
 # Creating Modules.
 defmodule myModule() do
@@ -8,7 +15,7 @@ defmodule myModule() do
 
   # Creating Functions.
   def myFunc() do
-    IO.puts("This is a function.")
+    IO.puts("This is a public function. Can be used globally.")
   end
 
   defp privateFunc() do
@@ -16,10 +23,18 @@ defmodule myModule() do
   end
 end
 
-# Activating Functions inside Modules.
-IO.puts myModule.myFunc();
+# Big Fat Error: myModule not imported?? `undefined function myModule/0 (there is no such import)`
 
-# I cannot get classes or functions to run properly. only variables with console logging.
+
+
+
+
+
+# Activating Functions inside Modules.
+
+
+
+
 
 
 

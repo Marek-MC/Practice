@@ -1,36 +1,38 @@
-# Statement: Core program file: Made up of statements. 
-# THIS IS A STATEMENT, executed by Perl. `.pl`
-
-# Hello World
-use warnings;
-print("Hello world.\n");
-
 # Creating Values and Variables.
+$myString = "This is a string printing a variable.\n";
 $myInteger = 1;
 $myFloat = 4.2;
-$myString = "This is a string, and these are floats and integers added together.\n";
 print($myString);
-print(myInteger + myFloat);
+print("This is an integer: ", $myInteger, "\n");
+print("This is a float: ", $myFloat, "\n");
 
 # Creating Expressions and Algorithms
 $a = 40;
 $b = 2;
 $c = $a + $b;
-print($c);
+print("This is a short algorithm: ", $c, "\n");
 
 # Blocks: Organize statements. 
 {
      $a = 1;
      $a = $a + 1;
-     print($a);
+     print("This is an algorithm inside a block: ", $a, "\n");
 }
 
-print(" | OK\n");
+print("OK\n");
 
 # Notes - 
 
+# Every Perl file is a Statement.
 # Perl will run despite of errors in the code. 
 # Perl is flexible with Whitespace.
+
+
+
+
+
+
+
 
 
 

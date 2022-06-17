@@ -8,10 +8,12 @@ double myDuo = 3.5; // Double: Stores floating point numbers w/ decimals.
 char myChar = 'S'; // Char: Stores a single digit value, a character.
 string myStr = ", S is for Savis, the S tier feline of the cosmos."; // String: Stores a string of text. 
 bool myBool = true; // Bool: Is either True or False.
+int? myNull = null; // Variables are non-nullable unless written with "?".
 
 Console.WriteLine(myInt + myDuo);
 Console.WriteLine(myChar + myStr);
 Console.WriteLine(myBool);
+Console.WriteLine(myNull); // Displays empty space (nice.)
 
 // Data Casting
 

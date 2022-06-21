@@ -1,8 +1,11 @@
 ﻿// Created with: `dotnet new console`
+// Activate with: `dotnet run`
 Console.WriteLine("Hello world!");
 
 // Variables and Data Types.
 
+var myVar = "Don't use these."; // ArgumentNullException implicit way of declaring variables.
+const string myConst = "Nice."; // Constants must be explicitly typed. 
 int myInt = 1; // Int: Stores whole numbers.
 double myDuo = 3.5; // Double: Stores floating point numbers w/ decimals.
 char myChar = 'S'; // Char: Stores a single digit value, a character.
@@ -32,7 +35,7 @@ Console.WriteLine(myDouble); // Outputs 9
 
 // User Inputs
 
-Console.WriteLine("Input Text:");
+Console.WriteLine("Username?");
 
 // Create a string variable and get user input from the keyboard and store it in the variable.
 string userName = Console.ReadLine();
@@ -44,6 +47,41 @@ Console.WriteLine("Username is: " + userName);
 
 // If Else Statements
 
+Console.WriteLine("Age?");
+int age = Convert.ToInt32(Console.ReadLine());
+
+if (age < 18)
+{
+    Console.WriteLine("Underage.");
+}
+else if (age > 60)
+{
+    Console.WriteLine("This is a senior.");
+}
+else
+{
+    Console.WriteLine("Not underage.");
+};
+
+
+// Switch Cases
+
+var variable = 'a';
+
+switch (variable)
+{
+    case 'a':
+        Console.WriteLine("Case A ran successfully");
+        break;
+
+    case 'b':
+        Console.WriteLine("Case B ran successfully");
+        break;
+
+    default:
+        Console.WriteLine(variable);
+        break;
+}
 
 
 // Loops
